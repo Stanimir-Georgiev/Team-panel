@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,600&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    box-sizing: border-box;
+    font: var(--font-size-body, 18px)/1.5 'Poppins', sans-serif;
+}
+
+body, table, form, select, option, input, textarea {
+    font: inherit;
+    box-sizing: inherit;
+}
+body {
+    background: var(--main-background-color);
+}
+
+h1 { font-size: 2.4em; }
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+
+a {
+    text-decoration: none;
+    color: var(--color-link-default, #0A0);
+}
+
+ol > li > ol > li {
+    list-style-type: lower-roman;
+}
+select {
+    padding: 1em;
+    margin: 1em;
+    background: none;
+    border-radius: 0.5em;
+    outline: none;
+    border: 2px solid var(--main-purple-color);
+    display: block;
+    &:hover {
+        border-color: #000;
+    }
+    &:focus {
+        border-color: #000;
+    }
+}
+option {
+    padding: 1em;
+    border-radius: 2em;
+}
