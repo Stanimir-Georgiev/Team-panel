@@ -348,7 +348,8 @@ body .page {
   .content-main-panel-dashboard {
     margin-top: 0.7em;
     display: flex;
-    border: 2px solid #efeef4; }
+    border: 2px solid #efeef4;
+    border-radius: 0.7em; }
     .content-main-panel-dashboard-toolbar {
       display: flex;
       flex-direction: column;
