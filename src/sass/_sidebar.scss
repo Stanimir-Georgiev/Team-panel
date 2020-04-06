@@ -1,0 +1,106 @@
+.content-aside {
+    padding: 0.7em 0;
+    background: white;
+    border-right: 2px solid #efeef4;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-dropdown {
+        background: #ecedf6;
+        text-align: center;
+        border-radius: 1.3em;
+        padding: 1em;
+        position: relative;
+        margin: 0 3em 4em 3em;        
+
+        i {
+            color: white;
+            background: var(--main-blue-color);
+            display: block;
+            padding: 0.5em;
+            border-radius: 0.4em;
+            font-size: 0.8em;
+        }
+
+        &::after {
+            content: "\f107";
+            font-family: 'FontAwesome';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            right: -20px;
+            transform: translate(0, -50%);
+            color: #9695af;
+          }
+    }
+
+    &-button {
+        margin-bottom: 4em;
+
+        .primary {
+            border: none;
+            outline: none;
+            font-size: 0.7em;
+            padding: 1em 2em;
+            color: white;
+            background: var(--main-blue-color);
+            border-radius: 0.4em;
+            font-weight: 700;
+            box-shadow: 1px 7px 24px -8px #577bf9;
+        }
+    }
+    
+    &-navigation {
+        font-size: 0.8em;
+        font-weight: 700;
+        margin-bottom: 1em;
+
+        &-ul {
+            li {
+                margin-bottom: 1.5em;
+
+                &:last-child {
+                    margin-top: 7em;
+                }
+
+                i {
+                    display: inline-block;
+                    margin-right: 0.7em;
+                    font-size: 1.4em;
+                    color: #9c9bb4;
+                }
+
+                a {
+                    padding: 0.6em 3em;
+                    display: inline-block;
+                    border-left: 4px solid transparent;
+                    border-top-left-radius: 0.1em;
+                    border-bottom-left-radius: 0.1em;
+
+                    &:focus {
+                        border-color: var(--main-blue-color);
+                        color: #4f4c84;
+                        background-image: linear-gradient(to right, #f6f6fa , #fff);
+
+                        i {
+                            color: var(--main-blue-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-shutdown {
+        padding: 0.7em 0.9em;
+        background: var(--main-blue-color);
+        border-radius: 50%;
+        
+        i {
+            color: white;
+        }
+    }
+}

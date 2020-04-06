@@ -21,25 +21,25 @@
                     <nav class="content-aside-navigation">
                         <ul class="content-aside-navigation-ul">
                             <li>
-                                <a href="#">Dashboard</a>
+                                <a href="#"><i class="fas fa-columns"></i>Dashboard</a>
                             </li>
                             <li>
-                                <a href="#">People</a>
+                                <a href="#"><i class="fas fa-user-friends"></i>People</a>
                             </li>
                             <li>
-                                <a href="#">Finances</a>
+                                <a href="#"><i class="fas fa-piggy-bank"></i>Finances</a>
                             </li>
                             <li>
-                                <a href="#">Statistics</a>
+                                <a href="#"><i class="fas fa-signal"></i>Statistics</a>
                             </li>
                             <li>
-                                <a href="#">Documents</a>
+                                <a href="#"><i class="fas fa-file-alt"></i>Documents</a>
                             </li>
                             <li>
-                                <a href="#">Calendar</a>
+                                <a href="#"><i class="fas fa-calendar-alt"></i>Calendar</a>
                             </li>
                             <li>
-                                <a href="#">Support</a>
+                                <a href="#"><i class="fab fa-creative-commons-sampling"></i>Support</a>
                             </li>
                         </ul>
                     </nav>
@@ -50,13 +50,14 @@
                 <main class="content-main">
                     <header class="content-main-header">
                         <div class="content-main-header-search">
-                            <input type="text" name="search" id="search">
+                            <input type="text" name="search" id="search"><i class="fas fa-search"></i></input>
                         </div>
                         <div class="content-main-header-person">
                             <p class="content-main-header-date">29 Aug 2019</p>
-                            <i class="fas fa-bell"></i>
-                            <h6 class="content-main-header-pearson-name">Charles Merl</h6>
+                            <i class="far fa-bell"></i>
+                            <h6 class="content-main-header-pearson-name">Carlota Merl</h6>
                             <img src="./src/images/91932494_627061437841015_3607386587173748736_n.jpg" alt="profile">
+                            <i class="fas fa-angle-down"></i>
                         </div>
                     </header>
                     <main class="content-main-panel">
@@ -73,17 +74,18 @@
                                 </ul>
                             </div>
                             <div class="content-main-panel-header-search">
-                                <input type="text" name="name" id="name" placeholder="Search by name">
+                                <input type="text" name="name" id="name" placeholder="Search by name"><i class="fas fa-search"></i></input>
                             </div>
                         </div>
                         <div class="content-main-panel-buttons">
                             <div class="content-main-panel-buttons-left">
-                                <select name="team" id="team" class="content-main-panel-buttons-left-select">
-                                    <option value="Design Team" selected>Design Team</option>
-                                </select>
-                                <select name="position" id="position" class="content-main-panel-buttons-left-select">
-                                    <option value="Position" selected>Position</option>
-                                </select>
+                                <div>
+                                    <input type="text" name="Design Team" id="design-team" value="Design Team">
+                                </div>
+                                <div>
+                                    <input type="text" name="position" id="position" value="Position">
+                                </div>
+
                             </div>
                             <div class="content-main-panel-buttons-right">
                                 <button class="content-main-panel-buttons-right-export">Export</button>
@@ -92,10 +94,10 @@
                         <div class="content-main-panel-dashboard">
                             <aside class="content-main-panel-dashboard-toolbar">
                                 <header class="content-main-panel-dashboard-toolbar-header">
-                                    <button class="content-main-panel-dashboard-toolbar-plus-minus">
+                                    <button class="content-main-panel-dashboard-toolbar-header-plus-minus">
                                         +
                                     </button>
-                                    <button class="content-main-panel-dashboard-toolbar-plus-minus">
+                                    <button class="content-main-panel-dashboard-toolbar-header-plus-minus">
                                         -
                                     </button>
                                     <p>100%</p>
@@ -108,28 +110,47 @@
                             </aside>
                             <main class="content-main-panel-dashboard-team">
                                 <div class="content-main-panel-dashboard-team-lead">
-                                    <h2>Design Team</h2>
+                                    <h5>Design Team</h5>
                                     <div class="content-main-panel-dashboard-team-lead-info">
-                                        <img src="./src/images/91932494_627061437841015sss_3607386587173748736_n.jpg" alt="">
-                                        <h6>Henry Paulista</h6>
+                                        <div class="content-main-panel-dashboard-team-lead-info-image">
+                                            <div class="content-main-panel-dashboard-team-lead-info-image-wrapper">
+                                                <img src="./src/images/91932494_627061437841015sss_3607386587173748736_n.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <h6>Samanta Paulista</h6>
                                         <p>Senior Creative Director</p>
                                     </div>
                                     <p>team leader</p>
                                 </div>
                                 <div class="content-main-panel-dashboard-team-seniors">
-                                   <ul>
-                                       <li>
-                                           <img src="./src/images/senior.jpg" alt="">
+                                    <div class="content-main-panel-dashboard-team-seniors-1"></div>
+                                    <div class="content-main-panel-dashboard-team-seniors-2"></div>
+                                    <div class="content-main-panel-dashboard-team-seniors-3"></div>
+                                   <ul class="content-main-panel-dashboard-team-seniors-ul">
+                                       <li class="content-main-panel-dashboard-team-seniors-ul-li">
+                                           <div class="content-main-panel-dashboard-team-seniors-ul-li-image">
+                                               <div class="content-main-panel-dashboard-team-seniors-ul-li-image-wrapper">
+                                                <img src="./src/images/senior.jpg" alt="">
+                                               </div>
+                                           </div>
                                            <h6>Maria Thompson</h6>
                                            <p>Senior UI Designer</p>
                                        </li>
-                                       <li>
-                                           <img src="" alt="">
+                                       <li class="content-main-panel-dashboard-team-seniors-ul-li">
+                                        <div class="content-main-panel-dashboard-team-seniors-ul-li-image">
+                                            <div class="content-main-panel-dashboard-team-seniors-ul-li-image-wrapper">
+                                                <img src="./src/images/cartoon.jpg" alt="">
+                                            </div>
+                                        </div>
                                            <h6>Robert Novitzky</h6>
                                            <p>Senior UX Designer</p>
                                        </li>
-                                       <li>
-                                           <img src="./src/images/senior2.jpg" alt="">
+                                       <li class="content-main-panel-dashboard-team-seniors-ul-li">
+                                            <div class="content-main-panel-dashboard-team-seniors-ul-li-image">
+                                                <div class="content-main-panel-dashboard-team-seniors-ul-li-image-wrapper">
+                                                    <img src="./src/images/senior2.jpg" alt="">
+                                                </div>
+                                            </div>
                                            <h6>Marta Nolan</h6>
                                            <p>Senior UI Designer</p>
                                        </li>
@@ -137,7 +158,11 @@
                                    <p>seniors</p>
                                 </div>
                                 <div class="content-main-panel-dashboard-team-member">
-                                    <img src="./src/images/download.jpeg" alt="">
+                                    <div class="content-main-panel-dashboard-team-member-image">
+                                        <div class="content-main-panel-dashboard-team-member-image-wrapper">
+                                            <img src="./src/images/download.jpeg" alt="">
+                                        </div>
+                                    </div>  
                                 </div>
                             </main>
                         </div>

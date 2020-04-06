@@ -4,7 +4,7 @@
 }
 html {
     box-sizing: border-box;
-    font: var(--font-size-body, 18px)/1.5 'Poppins', sans-serif;
+    font: var(--font-size-body, 16px)/1.5 'Poppins', sans-serif;
 }
 
 body, table, form, select, option, input, textarea {
@@ -24,7 +24,7 @@ h6 { font-size: 1.0em; }
 
 a {
     text-decoration: none;
-    color: var(--color-link-default, #0A0);
+    color: var(--color-link-default, #9c9bb4);
 }
 
 ol > li > ol > li {

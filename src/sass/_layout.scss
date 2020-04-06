@@ -1,0 +1,20 @@
+body {
+    .page {
+        background: var(--main-black-color);
+
+        &-wrapper {
+            max-width: 1325px;
+            margin: 0 auto;
+            background: var(--main-grey-color);
+            padding: 6.37em 4em;
+
+            .content {
+                display: flex;
+
+                &-main {
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+}
